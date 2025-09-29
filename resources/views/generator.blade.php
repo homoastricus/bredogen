@@ -89,7 +89,7 @@
 
                     <div class="d-flex justify-content-center gap-3 mb-3">
                         <button class="btn btn-primary" onclick="generateSentence()">
-                            <i class="fas fa-sync-alt me-2"></i>Сгенерировать новую
+                            <i class="fas fa-sync-alt me-2"></i>Сгенерируй еще...
                         </button>
 
                         <button class="btn btn-outline-secondary copy-btn" onclick="copySentence()"
