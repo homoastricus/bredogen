@@ -152,7 +152,7 @@ class SentenceController extends Controller
     {
         // Генерируем adj1 с вероятностью 85%
         $adj1 = null;
-        if (mt_rand(1, 100) <= 85) {
+        if (mt_rand(1, 100) <= 60) {
             $adj1 = Adjective::inRandomOrder()->first();
         }
 
@@ -166,7 +166,7 @@ class SentenceController extends Controller
         $circum = null;
         $nType = null;
 
-        if (mt_rand(1, 100) <= 70) {
+        if (mt_rand(1, 100) <= 95) {
             $nType = $this->getRandomNType();
             $verb = Verb::where('type', 'v' . $nType)->inRandomOrder()->first();
             $circum = Circum::where('type', 'v' . $nType)->inRandomOrder()->first();
