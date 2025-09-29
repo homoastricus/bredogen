@@ -159,7 +159,7 @@
         resetUI();
 
         // Если есть слова в currentWords, значит страница загружена с конкретной генерацией
-        if (currentWords.adj1_id) {
+        if (currentWords.nn_id) {
             console.log('Загружена существующая генерация, лайк можно поставить');
         }
     });
@@ -188,7 +188,7 @@
     }
 
     async function shareSentence() {
-        if (!currentWords.adj1_id) {
+        if (!currentWords.nn_id) {
             showMessage('Сначала сгенерируйте предложение!', 'warning');
             return;
         }
@@ -226,7 +226,7 @@
     }
 
     async function likeSentence() {
-        if (!currentWords.adj1_id) {
+        if (!currentWords.nn_id) {
             showMessage('Сначала сгенерируйте предложение!', 'warning');
             return;
         }
